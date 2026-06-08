@@ -546,10 +546,21 @@
   .social-btn svg { width: 18px; height: 18px; fill: var(--white); }
 
   .footer-bottom {
-    padding-top: 1.5rem; display: flex;
-    justify-content: space-between; align-items: center;
-    font-size: 0.8rem; color: rgba(255,255,255,0.28);
-    flex-wrap: wrap; gap: 0.5rem;
+    padding-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.65rem;
+    font-size: 0.8rem;
+    color: rgba(255,255,255,0.28);
+  }
+  .footer-bottom-legal {
+    white-space: pre-line;
+    max-width: 100%;
+    line-height: 1.55;
+  }
+  .footer-bottom-tagline {
+    color: rgba(255,255,255,0.32);
   }
 
   /* ── RESPONSIVE ── */
@@ -585,7 +596,7 @@
     .unidade-cta { flex-direction: column; }
     .vagas-form { padding: 1.5rem 1.1rem; }
     footer { padding: 2.5rem 1rem 1.5rem; }
-    .footer-bottom { flex-direction: column; align-items: flex-start; gap: 0.75rem; }
+    .footer-bottom { gap: 0.75rem; }
   }
 </style>
 </head>
@@ -991,8 +1002,10 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© 2026 Drogaria Ultra Xbrothers LTDA - CNPJ 52.649.556/0001-07. Telefone: (21) 97713-0718 - Todos os direitos reservados.</span>
-      <span>A Farmácia Mais Barata do Brasil</span>
+      <span class="footer-bottom-legal">© 2026 Drogaria Ultra Xbrothers LTDA - CNPJ 52.649.556/0001-07. Telefone: (21) 97713-0718 -
+© 2026 FARMACIA MONTE CASTELO DE CAXIAS LTDA - CNPJ 13.791.235/0001-90. Telefone: (21) 97713-0718
+Todos os direitos reservados.</span>
+      <span class="footer-bottom-tagline">A Farmácia Mais Barata do Brasil</span>
     </div>
   </div>
 </footer>
